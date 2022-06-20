@@ -1,0 +1,13 @@
+name = "JuliaJuliaSet"
+uuid = "563535f8-c55a-4c62-833a-d20bec5fef7e"
+authors = ["Errol Bucy"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
