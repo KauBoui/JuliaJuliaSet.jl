@@ -91,7 +91,7 @@ pointsoncurve(P::Path, n::Integer) = [P.parameterization(t) for t in range(P.sta
 
 # ----- Functions for animating series of sets -----
 
-function animateprogression(sets::Vector{Matrix{Int64}}, set_p::SetParams, file_name::String ="~/GIFs/julia_$(p.min_coord)_$(p.max_coord)_$(p.height)_$(p.width)_$(p.nr_frames).gif")
+function animateprogression(sets::Vector{Matrix{Int64}}, set_p::SetParams, file_name::String ="~/GIFs/julia_set.gif")
     anim = @animate for set ∈ sets
         heatmap(set, size=(set_p.width,set_p.height), color=:terrain, leg=false)
     end
